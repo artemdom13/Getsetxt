@@ -40,7 +40,7 @@ public class GetInfo {
             File file = new File("C:\\Users\\domashkevichao\\Desktop\\Сотрудники\\Домашкевич\\Личное\\JAVA\\Test.txt");
             FileWriter fr = null;
             try {
-                fr = new FileWriter(file);
+                fr = new FileWriter(file, true);
                 fr.write(data);
             } catch (IOException e) {
                 e.printStackTrace();
